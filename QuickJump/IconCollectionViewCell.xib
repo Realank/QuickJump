@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="IconCollectionViewCell" customModule="QuickJump" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agc-Ch-HKH">
+                        <rect key="frame" x="23" y="63" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6C-ty-Qow">
+                        <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="LbE-07-iXs"/>
+                            <constraint firstAttribute="height" constant="60" id="q1Y-ap-Qmn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="v6C-ty-Qow" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Bp7-zt-c9E"/>
+                <constraint firstItem="v6C-ty-Qow" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bJW-10-j9h"/>
+                <constraint firstItem="agc-Ch-HKH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cGG-DT-Pen"/>
+                <constraint firstAttribute="bottom" secondItem="agc-Ch-HKH" secondAttribute="bottom" id="eUb-83-ntl"/>
+            </constraints>
+            <size key="customSize" width="79" height="80"/>
+            <connections>
+                <outlet property="imageView" destination="v6C-ty-Qow" id="kmb-9w-BO4"/>
+                <outlet property="nameLabel" destination="agc-Ch-HKH" id="nnS-BA-G6F"/>
+            </connections>
+            <point key="canvasLocation" x="313.5" y="360"/>
+        </collectionViewCell>
+    </objects>
+</document>

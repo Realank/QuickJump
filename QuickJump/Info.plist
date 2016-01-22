@@ -35,11 +35,11 @@
 	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>uber</string>
 		<string>ibooks</string>
 		<string>doubanradio</string>
 		<string>dianping</string>
 		<string>zhihu</string>
-		<string>yddictproapp</string>
 		<string>wccbyihaodian</string>
 		<string>imeituan</string>
 		<string>youku</string>
